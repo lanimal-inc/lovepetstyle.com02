@@ -1,0 +1,2574 @@
+@charset "UTF-8";
+/* メディアクエリ	*/
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+   ■■■■■    スマホ・タブレット用（992px以下に適用させる）     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */ 
+@media screen and (max-width: 991px) {
+
+.pc_only {display:none;}
+
+/* ==========================================================================  
+
+	共通
+
+   ========================================================================== */ 
+body {
+	padding-top: 25px;  /*-- スライドが上部メニューに隠れてしまうための対策 */
+	margin:0 0 0 0;
+	background:url(../img/body_back.png);
+	width: 100% ;
+}
+/* ==========================================================================  
+
+	index.html
+
+   ========================================================================== */ 
+
+.taisaku_mobile {
+	padding-top: 25px;  /*-- スライドが上部メニューに隠れてしまうための対策 */
+}
+
+
+/* 【予約バナー】画像 */
+.rezarb_list {
+	display: block;
+	margin: 0 auto 0 auto ;
+}
+.rezarb_list img {
+	max-width:600px;
+	width: 100%;
+}
+
+ /*-- ==========================================================================
+	1.キャンペーン情報
+=========================================================================== */  
+/* ボックス */
+.top_1_box {
+	min-height:450px;  
+	width: 100%;
+	margin:0 auto 0 auto;
+	padding:60px 0 50px 0;
+}
+/* タイトル*/
+.top_1_title img{
+	 display: block;
+	margin: 0 auto 20px auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* お知らせ */
+.top_1_cam div{
+	margin: 50px auto 0 auto ;
+	width:90%;
+	height:200px;
+	padding:20px;
+	background:#fff;
+	overflow: auto;
+	border: thin solid #666;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+/* Facebook */
+.top_f_cam div{
+	margin: 25px auto 0 auto ;
+	width:90%;
+	text-align: center;
+}
+
+.cam_top{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+.cam_title{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+.cam_now{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5em;
+}
+
+.cam_old{
+	font-size: 14px;
+}
+
+/* お知らせ（罫線） */
+.top_1_cam hr{    
+     border-bottom-style: dotted;
+    border-bottom-color: #666;
+    border-bottom-width: 1px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    margin: 15px 0;
+ }
+
+ /* ==========================================================================
+ 	2.ローカルメニュー
+=========================================================================== */  
+/* ボックス */
+.top_2_box  {
+	background-color: #fff;
+	min-height:1300px;  
+	width: 100%;
+	margin:0 auto 0 auto;
+	padding:60px 0 30px 0;
+}
+/* 画像のボックス */
+.top_2_box ul {
+	width:90%;
+	margin: 0 auto 20px auto ;
+}
+/* 画像のボックス */
+.top_2_box li {
+	width:50%;
+	float: left;
+}
+/* 共通画像 */
+.top_2_box img{
+	display: block;
+	max-width:200px;
+	width:90%;
+	margin: 0 auto 20px auto ;
+}
+
+ /* ==========================================================================  
+	3.こんな時にご連絡下さい
+   ========================================================================== */ 
+/* ボックス */
+.top_3_box {
+	min-height:1200px; 
+	width:100%;
+	margin:0 auto 0 auto;
+	padding:60px 0 30px 0;
+}
+
+/* 画像のボックス */
+.top_3_box ul {
+	margin: 0 auto 20px auto ;
+	width:100%;
+}
+/* 画像のボックス */
+.top_3_box li {
+	width:50%;
+	float: left;
+}
+/* 共通画像 */
+.top_3_list  img{
+	display: block;
+	max-width:200px;
+	width:90%;
+	margin: 0 auto 10px auto ;
+}
+
+/* シッター内容のご案内 */
+.top_3_text div{
+	width:80%;
+	min-height:150px;  
+	margin: 0 auto 0 auto ;
+	padding:15px 0 15px 0;
+	background:url(../img/menulink_back.png);
+	border-radius: 10px 10px 10px 10px;　/* 左上・右上・右下・左下の順で指定する */
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+ 	/* シッター内容のご案内（テキスト） */
+.top_3_text_2 {
+	font-size: 20px;
+	color: #fff;
+	line-height: 1.5em;
+ }
+ 
+  	/* シッター内容のご案内（ボタン） */
+   	.top_3_text img{
+	display: block;
+	margin:10px auto 0 auto;
+	width:90%;
+	max-width:300px;
+ }
+
+ /* ==========================================================================  
+	4.安心してご利用いただくために
+   ========================================================================== */ 
+/* ボックス */
+.top_4_box {
+	background-color: #fff;
+	min-height:1700px;  
+	width: 100%;
+	margin:0 auto 25px auto;
+	padding:60px 0 30px 0;
+}
+
+/* リスト */
+.top_4_box ul{
+	width:80%;
+	margin: 0 auto 0 auto ;
+}
+
+/* 見出し */
+.merits_list_item__title{
+	font-weight: bold;
+	text-align: center;
+	color:#603f26;
+	font-size: 36px;
+	line-height: 1.5em;
+}
+
+/* 罫線 */
+.top_4_box hr{
+	margin: 0 auto 20px auto;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+    border-bottom-color: #666;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+/* 文章 */
+.top_4_box li{
+	width:100%;
+	min-height:250px;
+	padding:10px;
+	float: left;
+	font-size: 20px;
+	line-height: 1.5em;
+	margin: 0 0 30px 0;
+}
+
+.top_6_box ul {
+	padding-top:60px;
+	margin: 0 auto;
+	width:80%;
+	display: grid;
+	grid-template-columns:47.5% 1fr;
+	gap: 20px;
+	align-items: stretch;
+}
+
+.top_6_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_6_list  img{
+	display: block;
+	width:100%;
+	margin: 0 auto;
+}
+	
+	 /* ==========================================================================  
+	5.メディア掲載情報
+   ========================================================================== */ 
+  /* ボックス */
+.top_5_box {
+	min-height:1000px;  
+	width: 100%;
+	margin:0 auto 0 auto;
+	padding: 25px 0 50px 0;
+}
+
+/* リスト */
+.top_5_box ul{
+	width:80%;
+	margin: 0 auto 0 auto ;
+}
+
+/* 文章 */
+.top_5_box li{
+	margin: 0 auto 0 auto ;
+	width:100%;
+	float: left;
+	min-height:50px;
+	padding:0 0px 0 10px;
+	font-size: 20px;
+	line-height: 1.5em;
+	}
+
+/* 画像 */
+.top_5_list img{
+	margin: 0 20px 40px 0;
+	width:25%;
+	max-width:316px;
+	float: left;
+}
+
+.radio_text {
+	padding: 0 0 0 30px;
+}
+
+.for_radio {
+	padding: 0 0 0 50px;
+}
+
+ .radio {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+ }
+ 
+ .page_link {
+	font-weight: bold;
+	margin: 0;
+ }
+
+
+	 /* ==========================================================================  
+	フッター
+   ========================================================================== */ 
+	 /* ボックス */
+.footer {
+	background:url(../img/navbar_back.png);
+	min-height:400px;
+	width:100%;
+	padding:15px 0 15px 0;
+	margin:0 auto 0 auto;
+ }
+ 
+ 	 /* ローカルメニュー */
+ .footer_menu {
+	width:90%;
+	margin: 0 auto 30px auto ;
+	color:#f7e160;
+	text-align: center;
+}
+.footer_menu tr{
+	height: 30px;
+}
+.footer_menu td{
+	width: 25%;
+	font-size: 14px;
+	line-height: 1.2em;
+	font-weight: bold;
+	border-right-style: solid;
+	border-right-width: 2px;
+    border-right-color: #f7e160;;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+	/* ロゴ */
+ .footer_rogo img{
+ 	width:65px;
+ }
+  /* アドレス */
+  .footer_address {
+ 	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	margin: 15px 0 15px 0;
+	font-weight: bold;
+	}
+	
+/* 画像のボックス */
+.footer ul {
+	width:80%;
+	margin: 0 auto 0 auto ;
+}
+/* 画像のボックス（ブログ・電話） */
+.footer_bn_large li {
+	width:50%;
+	float: left;
+}
+/* 共通画像（ブログ・電話） */
+.footer_bn_large img{
+	display: block;
+	max-width:150px;
+	margin: 0 auto 10px auto ;
+}
+
+/* 画像のボックス（外部リンク） */
+.footer_bn_small li {
+	width:23%;
+	float: left;
+	margin: 0 1% 0 1% ;
+}
+/* 共通画像（外部リンク） */
+.footer_bn_small img{
+	display: block;
+	width:100%;
+	max-width:100;
+	margin: 0 auto 5px auto ;
+}
+
+ /* ローカルメニュー */
+ .footer_bn {
+	width:75%;
+	margin: 0 auto 30px auto ;
+	text-align: center;
+}
+
+.footer_bn table {
+	border-collapse: collapse;
+}
+
+ .footer_bn tr{
+	height: 60px;
+	text-align: center;
+}
+
+.footer_bn td {
+	padding: 3px;
+	text-align: center;
+}
+
+.footer_bn img {
+	margin: 0 5px 5px auto ;
+}
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        1-初めてのお客様
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.LOVE PETが選ばれる理由
+========================== */  
+/* 外枠	*/
+.first_1 {
+	width:100%;
+	min-height:600px;
+	padding:70px 0 50px 0;
+	}
+	
+	/* 画像	*/
+.photo_45 img {
+	width:60%;
+	margin: 0 auto 50px auto ;
+}
+
+	/* 画像	*/
+.photo_80 img {
+	width:90%;
+	margin: 0 auto 50px auto ;
+}
+
+/* 画像	*/
+.photo_20 img {
+	width:50%;
+	margin: 0 auto 50px auto ;
+}
+
+ /*-- ======================
+ 　2.LOVEPET会員のお得な特典サービス
+========================== */  
+/* 外枠	*/
+.first_2 {
+	background-color: #fff;
+	width:100%;
+	min-height:600px;
+	padding:70px 0 50px 0;
+	}
+
+/* 見出し	*/
+.first_2_midashi1 {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 1.7em;
+	}
+
+.first_2_midashi2 {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 1em;
+	}
+	
+/* 本文1	*/
+.first_2_text1 {
+	width:80%;
+	font-size: 20px;
+	margin: 30px auto 0 auto ;
+	line-height: 1.7em;
+}
+
+/* 本文1	*/
+.first_2_text2 {
+	width:250px;
+	font-size: 20px;
+	float:left;
+	line-height: 1.7em;
+}
+
+/* 本文1	*/
+.first_2_text22 {
+	width:100%;
+	font-size: 20px;
+	float:left;
+	line-height: 1.7em;
+}
+
+
+/* 画像1	*/
+.first_2_text1  img {
+	float:right;
+	width:30%;
+}
+
+/* 取得ポイント	*/
+	.first_2_pt ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+	.first_2_pt  li{
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+    float: left;
+    width: 50%;
+	 font-size: 18px;
+}
+	
+/* 注意文	*/
+.first_2_text3 {
+	width:80%;
+	font-size: 16px;
+	margin: 30px auto 0 auto ;
+}
+	
+/*-- ======================
+ 　3.LOVEPETに任せたらここが安心その1
+========================== */  
+/* 外枠	*/
+.first_3 {
+	width:100%;
+	min-height:750px;
+	padding:70px 0 50px 0;
+	}
+/*-- ======================
+ 　4.LOVEPETに任せたらここが安心その2
+========================== */  
+/* 外枠	*/
+.first_4 {
+	background-color: #fff;
+	width:100%;
+	min-height:750px;
+	padding:70px 0 50px 0;
+	}
+/*-- ======================
+ 　5.LOVEPETに任せたらここが安心その3
+========================== */  
+/* 外枠	*/
+.first_5 {
+	width:100%;
+	min-height:700px;
+	padding:70px 0 50px 0;
+	}
+/*-- ======================
+ 　6.LOVEPETに任せたらここが安心その4
+========================== */  
+/* 外枠	*/
+.first_6 {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:70px 0 50px 0;
+	}
+/*-- ======================
+ 　7.LOVEPETに任せたらここが安心その5
+========================== */  
+/* 外枠	*/
+.first_7 {
+	width:100%;
+	min-height:750px;
+	padding:70px 0 50px 0;
+	}
+/*-- ======================
+ 　8.LOVEPETに任せたらここが安心その6
+========================== */  
+/* 外枠	*/
+.first_8 {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:70px 0 50px 0;
+	}	
+/*-- ======================
+ 　9.LOVEPETに任せたらここが安心その7
+========================== */  
+/* 外枠	*/
+.first_9 {
+	width:100%;
+	min-height:700px;
+	padding:45px 0 50px 0;
+	}	
+/*-- ======================
+ 　10.LOVEPETに任せたらここが安心その8
+========================== */  
+/* 外枠	*/
+.first_10 {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:70px 0 50px 0;
+	}		
+/*-- ======================
+ 　11.安心と信頼をご提供する10のお約束
+========================== */  
+/* 外枠	*/
+.first_11 {
+	width:100%;
+	min-height:1100px;
+	padding:70px 0 50px 0;
+	}				
+/*-- ======================
+ 　12.営業エリア
+========================== */  
+/* 外枠	*/
+.first_12 {
+	background-color: #fff;
+	width:100%;
+	min-height:550px;
+	padding:70px 0 100px 0;
+	}		
+
+
+
+
+ /*-- ==========================================================================
+ 
+ 
+           　2-ご利用の流れ
+ 
+ 
+=========================================================================== */  
+	/* アイコン */
+.title_box img {
+	margin: 0 auto 25px auto ;
+	width:45%;
+	max-width:230px;
+}
+
+/* 見出し1	*/
+.flow_0_midashi1 {
+	margin:25px auto 20px auto;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	line-height: 1.7em;
+}
+
+ /*-- ==========================================================================
+ 　1.お申込
+=========================================================================== */  
+/* 外枠	*/
+.flow_a {
+	width:100%;
+	min-height:900px;
+	padding:45px 0 50px 0;
+	}
+
+/* タイトル	*/
+.flow_a_title img{
+	margin: 0 auto 50px auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* 見出し1	*/
+.flow_a_midashi1 {
+	margin:50px auto 25px auto;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	line-height: 1.7em;
+}
+
+/* 見出し1	*/
+.flow_a_midashi1 strong{
+	color:#603f26;
+}
+
+/* 見出し2	*/
+.flow_a_midashi3 {
+	margin:25px auto 0 auto;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.5em;
+	width:80%;
+}
+
+/* 本文1	*/
+.flow_a_text1 , .flow_a_text2 {
+	width:80%;
+	font-size: 20px;
+	margin: 0 auto 0 auto ;
+	line-height: 1.7em;
+}
+
+/* 本文1	*/
+.flow_a_text1 strong , .flow_a_text2 strong{
+	color:#603f26;
+	font-weight: bold;
+}
+
+/* 見出し2	*/
+.flow_a_midashi2 {
+	margin:25px auto 0 auto;
+	font-weight: bold;
+	font-size: 26px;
+	text-align: center;
+}
+
+/* 画像1	*/
+.flow_a_rezave {
+     text-align: center;
+     display:block
+}
+.flow_a_rezave img{
+	margin: 0 auto 20px auto ;
+	width:80%;
+	max-width:400px
+}
+
+ /*-- ==========================================================================
+ 　2.ご説明 ・3.ご契約
+=========================================================================== */  
+/* 外枠	*/
+.flow_b {
+	background-color: #fff;
+	width:100%;
+	min-height:900px;
+	padding:45px 0 25px 0;
+	}
+
+/* タイトル	*/
+.flow_b_title1 img{
+	margin: 20px auto 0 auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* 本文1	*/
+.flow_b_text1 {
+	width:80%;
+	font-size: 20px;
+	margin: 25px auto 0 auto ;
+	line-height: 1.7em;
+}
+
+/* 画像1	*/
+.flow_b_photo1 {
+	text-align: center;
+ 	display:block
+}
+.flow_b_photo1 img {
+	width:40%;
+	max-width:212px;
+}
+
+/* 画像1	*/
+.flow_b_photo2 img {
+	width:40%;
+	max-width:212px;
+}
+
+/* タイトル	*/
+.flow_b_title2 img{
+	margin: 100px auto 20px auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* 画像1	*/
+.flow_a_btn_plan img {
+	margin: 0 auto 0 auto ;
+	width:80%;
+	display: block;
+}
+
+ /*-- ==========================================================================
+ 　4. 鍵のお預かり
+=========================================================================== */  
+/* 外枠	*/
+.flow_c {
+	width:100%;
+	min-height:900px;
+	padding:45px 0 50px 0;
+	}
+
+/* タイトル	*/
+.flow_c_title1 img{
+	margin: 0 auto 25px auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* 画像1	*/
+.flow_c_photo1 img {
+	width:80%;
+	max-width:257px;
+}
+
+/* ボックス	*/
+.flow_c_auto {
+	width:80%;
+	margin:0 auto 0 auto;
+}
+
+/* ボックス	*/
+.flow_c_inner_1{
+	width:100%;
+}
+
+
+/* 見出し1	*/
+.flow_c_midashi1 {
+	margin:30px auto 10px auto;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+	/* 項目ボックス	*/
+.flow_c_inner_1 table{
+	width:100%;
+	margin: 0 auto 20px auto ;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+	/* 項目セルの空白	*/
+.job_koumoku {
+	border-collapse: separate;
+	border-spacing : 4px;
+}
+
+	/* 項目3つ並び	*/
+.job_koumoku_1 td{
+	border: thin solid #c9caca;
+    background-color: #fff;
+	width:33.3333%;
+	margin: 2px;
+	text-align: center;
+	height: 30px;
+}
+	/* 項目2つ並び	*/
+.job_koumoku_2 td{
+	border: thin solid #c9caca;
+    background-color: #fff;
+	width:50%;
+	margin: 2px;
+	text-align: center;
+	height: 30px;
+}
+
+
+
+/* 受渡し方法	*/
+.flow_c_obj1 img{
+	width:90%;
+	margin: 0 auto 25px auto ;
+	max-width:430px;
+}
+
+/* ※文	*/
+.flow_c_text1 {
+	width:100%;
+	font-size: 16px;
+	margin: 20px auto 20px auto ;
+}
+
+/* オブジェクト（背景）	*/
+.flow_c_box {
+	width:90%;
+	background:url(../img/menulink_back.png);
+	margin: 0 auto 0 auto ;
+	border-radius: 10px 10px 10px 10px;　
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	max-width:460px;
+}
+
+/* オブジェクト（テキスト画像）	*/
+.flow_c_box img {
+	width:100%;
+}
+
+ /* グレーゾーン2段1組 */
+.glay_two_1 div{
+	width:80%;
+
+	margin: 0 auto 0 auto ;
+	padding:30px 30px 20px 30px;
+	background:url(../img/menulink_back.png);
+	border-radius: 10px 10px 10px 10px;　/* 左上・右上・右下・左下の順で指定する */
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.glay_two_1 ul {
+	margin: 0 auto 20px auto ;
+	width:100%;
+}
+.glay_two_1 li{
+ }
+ 
+  /* グレーゾーン1段1組 */
+.glay_one_1 div{
+	width:80%;
+	min-height:150px;  
+	margin: 0 auto 0 auto ;
+	padding:30px 30px 20px 30px;
+	background:url(../img/menulink_back.png);
+	border-radius: 10px 10px 10px 10px;　/* 左上・右上・右下・左下の順で指定する */
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.glay_one_1 ul {
+	margin: 0 auto 20px auto ;
+	width:100%;
+}
+.glay_one_1 li{
+ }
+
+ /* グレーゾーン 2段2組*/
+.glay_two_2 div{
+	width:80%;
+	margin: 0 auto 0 auto ;
+	padding:30px 30px 20px 30px;
+	background:url(../img/menulink_back.png);
+	border-radius: 10px 10px 10px 10px;　/* 左上・右上・右下・左下の順で指定する */
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.glay_two_2 ul {
+	margin: 0 auto 20px auto ;
+	width:100%;
+}
+.glay_two_2 li{
+ }
+
+ /* グレーゾーン2段1組 */
+.glay_two_1-2 div{
+	width:100%;
+	min-height:150px;  
+	margin: 0 auto 0 auto ;
+	padding:30px 30px 20px 30px;
+	background:url(../img/menulink_back.png);
+	border-radius: 10px 10px 10px 10px;　/* 左上・右上・右下・左下の順で指定する */
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.glay_two_1 ul {
+	margin: 0 auto 20px auto ;
+	width:100%;
+}
+.glay_two_1 li{
+ }
+ 
+  /* グレーゾーン1段1組 */
+.glay_one_1-2 div{
+	width:100%;
+	min-height:150px;  
+	margin: 0 auto 0 auto ;
+	padding:30px 30px 20px 30px;
+	background:url(../img/menulink_back.png);
+	border-radius: 10px 10px 10px 10px;　/* 左上・右上・右下・左下の順で指定する */
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.glay_one_1 ul {
+	margin: 0 auto 20px auto ;
+	width:100%;
+}
+.glay_one_1 li{
+ }
+
+ /* グレーゾーン 2段2組*/
+.glay_two_2-2 div{
+	width:100%;
+	min-height:150px;  
+	margin: 0 auto 0 auto ;
+	padding:30px 30px 20px 30px;
+	background:url(../img/menulink_back.png);
+	border-radius: 10px 10px 10px 10px;　/* 左上・右上・右下・左下の順で指定する */
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+.glay_two_2 ul {
+	margin: 0 auto 20px auto ;
+	width:100%;
+}
+.glay_two_2 li{
+ }
+
+
+  /* グレーゾーン　テキスト */
+.glay_title_1 {
+	font-size: 22px;
+	color: #f7e160;
+	font-weight: bold;
+	text-align: center;
+	margin: 0  0 30px 0 ;
+}
+
+.glay_title_2 {
+	font-size: 22px;
+	color: #f7e160;
+	font-weight: bold;
+	margin: 0  0 30px 0 ;
+	line-height: 1.5em;
+}
+ 
+.glay_title_3 {
+	font-size: 22px;
+	color: #f7e160;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px  0 30px 0 ;
+}
+.glay_title_4 {
+	font-size: 22px;
+	color: #f7e160;
+	font-weight: bold;
+	margin: 0  0 30px 0 ;
+	text-align: center;
+}
+
+.glay_midashi_1 {
+	font-size: 18px;
+	color: #f7e160;
+	font-weight: bold;
+	text-align: center;
+}
+.glay_midashi_2 {
+	font-size: 18px;
+	color:#f7e160;
+	font-weight: bold;
+	text-align: center;
+}
+
+.glay_text_1 {
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.5em;
+}
+.glay_text_2 {
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin: 15px 0 15px 0;
+}
+
+
+
+ /*-- ==========================================================================
+ 　5. カルテの作成
+=========================================================================== */  
+/* 外枠	*/
+.flow_d {
+	background-color: #fff;
+	width:100%;
+	min-height:900px;
+	padding:75px 0 50px 0;
+	}
+
+/* タイトル	*/
+.flow_d_title1 img{
+	margin: 0 auto 55px auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* 画像1	*/
+.flow_d_photo1 {
+     text-align: center;
+     display:block
+}
+.flow_d_photo1 img {
+	width:40%;
+	max-width:212px;
+}
+
+/* 画像1	*/
+.flow_d_photo2 img {
+	width:40%;
+	max-width:212px;
+}
+
+/* 本文1	*/
+.flow_d_text1 {
+	width:80%;
+	font-size: 20px;
+	margin: 25px auto 0 auto ;
+	line-height: 1.7em;
+}
+
+/* オブジェクト（背景）	*/
+.flow_d_box {
+	width:90%;
+	background:url(../img/menulink_back.png);
+	margin: 0 auto 0 auto ;
+	border-radius: 10px 10px 10px 10px;　
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+		max-width:460px;
+}
+
+/* オブジェクト（テキスト画像）	*/
+.flow_d_box img {
+	width:100%;
+}
+
+ 
+ /*-- ==========================================================================
+ 　6. シッター当日・7. シッター終了後
+=========================================================================== */  
+/* 外枠	*/
+.flow_e {
+	width:100%;
+	min-height:900px;
+	padding:45px 0 50px 0;
+	}
+
+/* タイトル	*/
+.flow_e_title1 img{
+	margin: 0 auto 25px auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* 本文1	*/
+.flow_e_text3 {
+	width:80%;
+	font-size: 20px;
+	margin: 25px auto 0 auto ;
+	line-height: 1.7em;
+}
+
+/* 画像1	*/
+.flow_e_photo1 img {
+	width:80%;
+	max-width:257px;
+}
+
+/* タイトル	*/
+.flow_e_title2 img{
+	margin: 55px auto 25px auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* flow_e_text_4*/
+.flow_e_text_4 {
+	width:80%;
+	font-size: 20px;
+	margin: 25px auto 0 auto ;
+	line-height: 1.7em;
+}
+
+/* flow_e_text_4*/
+.flow_e_text_5 {
+	width:80%;
+	font-size: 16px;
+	margin: 0px auto 0 auto ;
+}
+
+/* ボックス	*/
+.flow_e_inner_1{
+	width:100%;
+}
+
+
+
+
+	/* 項目ボックス	*/
+.flow_e_inner_1 table{
+	width:80%;
+	margin: 0 auto 20px auto ;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+	/* 項目セルの空白	*/
+.frow_e_table {
+	border-collapse: separate;
+	border-spacing : 4px;
+}
+	/* 項目2つ並び	*/
+.frow_e_table td{
+	border: thin solid #c9caca;
+    background-color: #fff;
+	width:50%;
+	margin: 2px;
+	text-align: center;
+	height: 30px;
+}
+
+ /*-- ==========================================================================
+ 　
+=========================================================================== */  
+/* 外枠	*/
+.flow_f {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:75px 0 100px 0;
+	}
+ 
+ 
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        3.シッター内容
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.犬の場合
+========================== */  
+/* 外枠1	*/
+.job_box_01 {
+	min-height:1100px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+	
+/* 内枠	*/
+.job_box_inner {
+	width:90%;
+	margin: 0 auto 0 auto ;
+}
+
+/* 内枠	*/
+.job_box_inner_2 {
+	width:90%;
+	margin: 0 auto 0 auto ;
+}
+
+/* タイトル	*/
+.job_title img{
+	margin: 0 auto 50px auto ;
+	width:90%;
+	max-width:380px;
+}
+
+/* 見出し1	*/
+.job_midashi1 {
+	margin:50px auto 0 auto;
+	font-weight: bold;
+	font-size: 26px;
+	text-align: center;
+	color:#603f26;
+}
+
+/* 文章	*/
+.job_text_1 {
+	font-size: 20px;
+	line-height: 1.7em;
+}
+/* 文章（小）	*/
+.job_text_2 {
+	font-size: 14px;
+}
+
+	/* 項目	*/
+.job_koumoku_1 , .job_koumoku_2{
+	width:100%;
+	margin: 0 auto 20px auto ;
+	font-size: 16px;
+	font-weight: bold;
+	border-collapse: separate;
+	border-spacing : 4px;
+}
+
+	/* 項目3つ並び	*/
+.job_koumoku_1 td{
+	border: thin solid #c9caca;
+    background-color: #fff;
+	width:33.3333%;
+	margin: 2px;
+	text-align: center;
+	height: 30px;
+}
+	/* 項目2つ並び	*/
+.job_koumoku_2 td{
+	border: thin solid #c9caca;
+    background-color: #fff;
+	width:50%;
+	margin: 2px;
+	text-align: center;
+	height: 30px;
+}
+
+ /*-- ======================
+ 　1.猫の場合
+========================== */  
+/* 外枠1	*/
+.job_box_02 {
+	background-color: #fff;
+	min-height:900px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+	
+	/* 外枠1	*/
+.job_box_03 {
+	min-height:900px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+	
+ /*-- ======================
+ 　5.出張しつけドッグトレーニング
+========================== */  
+/* 外枠1	*/
+.job_box_04 {
+	min-height:900px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+
+/* 医院	*/
+	.job_list01 ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+	.job_list01 li{
+    padding: 0;
+    margin: 0 0 5px 0;
+    list-style-type:none;
+    float: left;
+    width: 50%;
+    line-height: 1.2em;
+	font-size: 16px;
+}
+
+.job_list02 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 15px 0 5px 0;
+}
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        4.料金・プラン
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.シッター通常コース（1日1時間）
+========================== */  
+/* 料金表	*/
+.menu_box_01 th , .menu_box_02 th , .menu_box_03 th , .menu_box_04  th, .menu_box_05 th , .menu_box_06 th {
+	background: #f7f8f8;
+	text-align: center;
+	border: 1px solid #c9caca;
+	border-collapse: collapse;
+	padding: 3px;
+	height: 25px;
+	font-size: 14px;
+}
+.menu_box_01 td , .menu_box_02 td , .menu_box_03 td , .menu_box_04  td , .menu_box_05 td , .menu_box_06 td  {
+	background: #fff;
+	text-align: right;
+	border: 1px solid #c9caca;
+	border-collapse: collapse;
+	padding: 3px;
+	height: 25px;
+	font-size: 14px;
+}
+
+/* 共通料金以外の値段を赤の太文字	*/
+.menu_box_01 td , .menu_box_02 td , .menu_box_03 td , .menu_box_04  td , .menu_box_05 td  {
+	font-weight: bold;
+	font-weight: normal;
+}
+
+/* 通常料金の値段を黒に戻す	*/
+.menu_box_05 .tuuzyou  {
+	color:#000;
+	font-weight: normal;
+}
+
+/* 共通料金の「回数券料金」を赤	*/
+.menu_box_05 .kaisuu  {
+	color:#603f26;
+}
+
+.menu_box_05 .kaisuu td {
+	font-weight: bold;
+}
+
+
+/* 外枠1	*/
+.menu_box_01 {
+	min-height:950px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+	
+/* 外枠2	*/
+.menu_box_02 {
+	background-color: #fff;
+	min-height:1200px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+/* 外枠3	*/
+.menu_box_03 {
+	background-color: #fff;
+	min-height:950px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+/* 外枠2	*/
+.menu_box_04 {
+	min-height:1200px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+	
+/* 外枠3	*/
+.menu_box_05 {
+    min-height: 2480px;
+    width: 100%;
+    padding: 75px 0 50px 0;
+	}
+	
+/* 外枠3	*/
+.menu_box_06 {
+	background-color: #fff;
+	min-height:1000px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+
+	
+/* 文章（大）	*/
+.menu_text_1 {
+	font-size: 20px;
+	margin: 25px 0 0 0;
+	line-height: 1.5em;
+}
+/* 文章（大）	*/
+.menu_text_1-2 {
+	font-size: 20px;
+	margin: 25px 0 0 0;
+	line-height: 1.5em;
+		width: 80%;
+				margin:0 auto 0 auto;
+				text-align: center;
+}
+
+/* 文章（小）	*/
+.menu_text_2 {
+	font-size: 16px;
+}
+
+/* 文章（小）	*/
+.menu_text_3 {
+	font-size: 16px;
+	width: 80%;
+		margin:0 auto 0 auto;
+}
+
+/* シッティング料金の一例	*/
+.menu_sitthing {
+	margin:20px auto 0 auto;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	color:#603f26;
+}
+
+/* 事例	*/
+.menu_text_3 {
+	font-size: 16px;
+}
+
+/* 金額	*/
+.menu_price {
+	margin:0 auto 0 auto;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        5-シッター紹介
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.資格取得一覧
+========================== */  
+/* 外枠	*/
+.sitter_1 {
+	width:100%;
+	min-height:400px;
+	padding:75px 0 50px 0;
+	}
+
+/* 本文1	*/
+.sitter_1_text1 {
+	width:80%;
+	font-size: 20px;
+	margin: 30px auto 0 auto ;
+	line-height: 1.5em;
+	padding: 20px 0 0 0;
+}
+
+/* 取得資格*/
+	.sitter_list ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+	.sitter_list li{
+    padding: 0 20px 0 0;
+    margin: 0;
+    list-style-type:none;
+    float: left;
+    width: 100%;
+}
+
+
+ /*-- ======================
+ 　2.有資格者シッター紹介
+========================== */  
+/* 外枠	*/
+.sitter_2 {
+	background-color: #fff;
+	width:100%;
+	min-height:800px;
+	padding:75px 0 50px 0;
+	}
+	
+	/* 画像1	*/
+.sitter_1_text1  img {
+	width:80%;
+}
+		
+/* 本文1	*/
+.sitter_2_text1 {
+	margin: 0 auto 0 45% ;
+}
+
+.sitter_name1 {
+	font-size: 16px;
+	display:block;
+	height:5px;
+	margin: 15px 0 0 0;
+	text-align: center;
+}
+
+.sitter_name2 {
+	font-size: 28px;
+	font-weight: bold;
+	display:block;
+	height:10px;
+	margin: 0 0 30px 0;
+	text-align: center;
+}
+
+.sitter_dateil {
+	font-size: 20px;
+	display:block;
+	height:5px;
+}
+
+.sitter_dateil img {
+	margin: 0 10px 0 0 ;
+	width:60px;
+}
+
+ /*-- ======================
+ 　3.有資格者シッター紹介　2
+========================== */  
+/* 外枠	*/
+.sitter_3 {
+	width:100%;
+	min-height:700px;
+	padding:75px 0 50px 0;
+	}
+	
+ /*-- ======================
+ 　4.有資格者シッター紹介　3
+========================== */  
+/* 外枠	*/
+.sitter_4 {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:75px 0 50px 0;
+	}
+	
+	
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        6-動物愛護への取り組み
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.ONE LOVEプロジェクト
+========================== */  
+/* 外枠1	*/
+.love_0 {
+	width:100%;
+	min-height:600px;
+	padding:25px 0 50px 0;
+	}
+
+.love_1 {
+	width:100%;
+	min-height:600px;
+	padding:75px 0 50px 0;
+	}
+
+/* 外枠2	*/
+.love_2 {
+	background-color: #fff;
+	width:100%;
+	min-height:600px;
+	padding:75px 0 50px 0;
+	}
+	
+/* テキスト	*/
+.love_text1{
+	width:80%;
+	margin: 30px auto 0 auto ;
+	font-size: 20px;
+	line-height: 1.7em;
+}
+
+/* テキスト	*/
+.love_text3{
+	width:90%;
+	margin: 30px auto 0 auto ;
+	font-size: 20px;
+	line-height: 1.7em;
+}
+
+
+/* テキスト	*/
+.love_text2{
+	width:80%;
+	margin: 0px auto 0 auto ;
+	font-size: 20px;
+	line-height: 1.5em;
+}
+
+/* 画像	*/
+.love_p {
+	width:80%;
+	margin: 30px auto 0 auto ;
+	text-align: center;
+}
+.love_p img{
+	width:100%;
+}
+/* 画像	*/
+.love_p_s {
+	width:50%;
+	margin: 30px auto 0px auto ;
+	text-align: center;
+}
+.love_p_s img{
+	width:100%;
+}
+
+/* 外枠	*/
+.love_banner {
+	width:80%;
+	margin: 0 auto 0 auto ;
+	text-align: center;
+	}
+
+.love_banner_1 {
+	width: 50%;
+	float: left;
+}
+
+.love_banner_2 {
+	width: 50%;
+	float: right;
+}
+
+.love_banner_1 img {
+	margin: 0 0 15px 0;
+	width: 200px;
+}
+.love_banner_2 img {
+	width: 125px;
+	margin: 0 0 0 75px;
+}
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        7-安全・安心対策
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+/* 外枠1	*/
+.safe_1 {
+	width:100%;
+	min-height:800px;
+	padding:45px 0 50px 0;
+	}
+
+.safe_banner_1 {
+	width: 50%;
+	float: left;
+}
+
+.safe_banner_2 {
+	width: 50%;
+	float: right;
+}
+
+.safe_banner_1 img {
+	width: 100px;
+}
+
+.safe_banner_2 img {
+	margin: 40px 0 0 0;
+	width: 200px;
+}
+ /*-- ======================
+ 　2.防災訓練研修の様子
+========================== */ 
+/* 外枠1	*/
+.safe_2 {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:75px 0 25px 0;
+	}
+	
+	
+	/* 外枠2	*/
+.safe_3 {
+	width:100%;
+	min-height:600px;
+	padding:75px 0 50px 0;
+	}
+	
+		/* 外枠2	*/
+.safe_3-2 {
+	width:100%;
+	min-height:600px;
+	padding:75px 0 50px 0;
+	}
+	
+	
+	/* 外枠3	*/
+.safe_4 {
+	background-color: #fff;
+	width:100%;
+	min-height:600px;
+	padding:75px 0 50px 0;
+	}
+	
+		/* 外枠3	*/
+.safe_4-2 {
+	background-color: #fff;
+	width:100%;
+	min-height:600px;
+	padding:75px 0 50px 0;
+	}
+	
+	.safe_midashi {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+ /*-- ======================
+ 　8.震災ライフジャケット
+========================== */  	
+/* 本文1	*/
+.safe_text1 {
+	width:80%;
+	font-size: 20px;
+	margin: 30px auto 0 auto ;
+	line-height: 1.5em;
+}
+
+/* 本文1	*/
+.safe_text2 {
+	width:50%;
+	font-size: 18px;
+	float:left;
+		line-height: 1.5em;
+}
+
+
+
+
+	/* 画像1	*/
+.safe_text1  img {
+	float:right;
+	width:40%;
+	margin: 10px 0 0 0;
+}
+
+ /*-- ======================
+ 　11.愛犬用非常食セット
+========================== */  	
+/* 外枠	*/
+.safe_5 {
+	width:100%;
+	min-height:900px;
+	padding:75px 0 50px 0;
+	}
+ /*-- ======================
+ 　12.愛猫用非常食セット
+========================== */  	
+/* 外枠	*/
+.safe_6 {
+	background-color: #fff;
+	width:100%;
+	min-height:900px;
+	padding:75px 0 50px 0;
+	}
+
+/* 外枠	*/
+.safe_7 {
+	width:100%;
+	min-height:700px;
+	padding:75px 0 50px 0;
+	}
+	
+	/* 外枠	*/
+.safe_9  {
+	width:50%;
+	min-height:700px;
+	padding:75px 0 50px 0;
+	}
+	
+	/* 見出し	*/
+.safe_text3 {
+	font-size: 24px;
+	line-height: 1.8em;
+	font-weight: bold;
+		margin: 0 auto 0 auto;
+}
+
+/* 外枠	*/
+.safe_8 {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:75px 0 50px 0;
+	}
+	
+/* 本文1	*/
+.safe_text4 {
+	width:50%;
+	font-size: 16px;
+	margin: 30px auto 0 auto ;
+}
+
+ /*-- ======================
+ 　24時間遠隔操作カメラ
+========================== */  	
+/* ヘッダー */
+.title_box2 {
+	background:url(../img/navbar_back.png);
+	padding:25px 0 25px 0;
+	min-height:180px;
+	width:100%;
+}
+
+	/* アイコン */
+.title_box2 img {
+	margin: 0 auto 25px auto ;
+	width:305px;
+}
+
+/* 外枠	*/
+.safe_12 {
+	width:100%;
+	min-height:500px;
+	padding:75px 0 50px 0;
+	margin: 0 auto 0 auto;
+	}
+	
+	/* 外枠	*/
+.safe_15 {
+	width:80%;
+		margin: 50px auto 0 auto;
+	}
+	
+	
+		/* 外枠	*/
+.safe_16 {
+	width:90%;
+		margin: 50px auto 0 auto;
+	}
+	
+/* 外枠	*/
+.safe_11 {
+	width:100%;
+	min-height:500px;
+	padding:75px 0 50px 0;
+	}
+
+/* 外枠	*/
+.safe_10 {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:75px 0 50px 0;
+	}
+	
+	/* 外枠	*/
+.safe_10-2 {
+	background-color: #fff;
+	width:100%;
+	min-height:700px;
+	padding:75px 0 50px 0;
+	}
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        8.サービス特典
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+/* 外枠1	*/
+.service_1 {
+	min-height:1150px;
+	width:100%;
+	padding:75px 0 50px 0;
+	}
+	
+	/* 外枠1	*/
+.service_2 {
+	background-color: #fff;
+	min-height:700px;
+	width:100%;
+	padding:75px 0 50px 0;
+}
+
+/* 外枠1	*/
+.service_3 {
+	min-height:800px;
+	width:100%;
+	padding:75px 0 100px 0;
+	}
+	
+	/* 外枠1	*/
+.service_4 {
+	background-color: #fff;
+	min-height:700px;
+	width:100%;
+	padding:75px 0 100px 0;
+	}
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        9.よくあるご質問
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+/* 外枠1	*/
+.question_1 {
+	width:100%;
+	padding:45px 0 25px 0;
+	}
+	
+/* 罫線*/
+.question_1 hr{
+	width:80%;
+	margin: 0px auto 0px auto ;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+    border-bottom-color: #666;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+	}
+	
+	/* 本文1	*/
+.question_text1 {
+	width:80%;
+	margin: 30px auto 0 auto ;
+	height: 40px;
+}
+
+	/* Q	*/
+.question_Q {
+	font-size: 40px;
+	float:left;
+	color:#603f26;
+	font-weight: bold;
+	margin: 10px 0 20px 0 ;
+}
+
+	/* Q文章	*/
+.question_text2 {
+	font-size: 22px;
+	font-weight: bold;
+	color:#603f26;
+	line-height: 1.5em;
+}
+
+/* A	*/
+.question_text3 {
+	width:80%;
+	font-size: 20px;
+	margin: 40px auto 30px auto ;
+	line-height: 1.5em;
+}
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        10-動物病院のご紹介
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+/* 外枠1	*/
+.hospital_1 {
+	width:100%;
+	padding:45px 0 50px 0;
+	}
+
+/* 外枠1	*/
+.hospital_2 {
+	background-color: #fff;
+	width:100%;
+	padding:45px 0 100px 0;
+	}
+	
+/* 本文1	*/
+.hospital_text1 {
+	width:80%;
+	margin: 30px auto 0 auto ;
+}
+
+/* 医院	*/
+	.hospital_clinic ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+	.hospital_clinic  li{
+    padding: 0;
+    margin: 0 0 20px 0;
+    list-style-type:none;
+    float: left;
+    width: 100%;
+    line-height: 1.5em;
+    	font-size: 20px;
+}
+
+	.hospital_clinic  .name {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.8em;
+}
+
+/* 区名*/
+.hospital_kumei {
+	margin:40px auto 0 auto;
+	font-weight: bold;
+	font-size: 46px;
+	text-align: center;
+	line-height: 2em;
+	
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+    border-bottom-color: #666;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        11.お客様写真館
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+/* 外枠1	*/
+.photo_1 {
+	min-height:600px;
+	width:100%;
+	padding:45px 0 25px 0;
+	}
+	
+/* 外枠2	*/
+.photo_2 {
+	background-color: #fff;
+	min-height:510px;
+	width:100%;
+	padding:50px 0 50px 0;
+	}
+
+/* 外枠3	*/
+.photo_3 {
+	min-height:470px;
+	width:100%;
+	padding:30px 0 0 0;
+	}
+	
+/* タイトル	*/
+.photo_title img{
+	margin: 0 auto 50px auto ;
+	width:70%;
+	max-width:316px;
+}
+
+/* テーブル設定	*/
+.photo_p {
+	border: none;
+	border-collapse: collapse;
+	width: 90%;
+	margin: 0 auto 0 auto ;
+}
+/* 写真の列設定	*/
+.photo_p th {
+	width: 25%;
+	text-align: center;
+	padding: 0px;
+}
+/* 文字の列設定	*/
+.photo_p td {
+	font-size: 12px;
+	text-align: center;
+	padding: 5px 0 20px 0;
+}
+/* 写真の設定	*/
+.photo_p img{
+	width: 85%;
+	max-width:96px
+}
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        12.お客様の声
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+/* 外枠1	*/
+#out_box {
+}
+
+/* 外枠1	*/
+.voice_1 {
+	background-color: #fff;
+	width:100%;
+	margin:0 auto 0 auto;
+	padding:45px 0 25px 0;
+	}
+	
+	/* 外枠1	*/
+.voice_2 {
+	width:100%;
+	margin:0 auto 0 auto;
+	padding:45px 0 25px 0;
+	}
+
+/* 見出し	*/
+.voice_midashi {
+	margin:75px auto 0 auto;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	line-height: 2em;
+	width:80%;
+}
+
+/* 見出し	*/
+.voice_midashi_s{
+	margin:0px auto 50px auto;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.7em;
+}
+
+/* 感想 */
+.voice_text {
+	width:80%;
+	margin:0 auto 0 auto;
+	font-size: 20px;
+	line-height: 1.5em;
+	padding:50px 0 30px 0;
+	
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+    border-bottom-color: #666;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.voice_text_last {
+	width:80%;
+	margin:0 auto 0 auto;
+	font-size: 18px;
+	line-height: 1.5em;
+	padding:50px 0 30px 0;
+}
+
+/* タイトル	*/
+.voice_title img{
+	margin: 75px auto 0 auto ;
+	width:90%;
+	max-width:380px;
+}
+
+	/*フォーム	*/
+.voice_form {
+	width:80%;
+	margin: 50px auto 100px auto ;
+	margin:0 auto 0 auto;
+}
+
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        13.会社概要
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+
+	/* ヘッダー */
+	.title_box {
+	background:url(../img/navbar_back.png);
+	padding:50px 0 25px 0;
+	min-height:100px;
+	text-align:center;
+	font-weight: bold;
+	font-size: 20px;
+	color: #f7e160;
+	width:100%;
+}
+
+
+/* 『会社概要』	*/
+.about_title_0 {
+	margin:75px auto 25px auto;
+	font-weight: bold;
+	font-size: 36px;
+	text-align: center;
+	color:#603f26;
+}
+
+/* 外枠1	*/
+.about_1 {
+	width:100%;
+	padding:45px 0 0 0;
+	}
+	
+/* 見出し1	*/
+.about_title {
+	margin:25px auto 25px auto;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* 本文1	*/
+.about_text {
+	width:80%;
+	margin: 30px auto 75px auto ;
+	font-size: 20px;
+	line-height: 1.7em;
+}
+
+/* 本文1	*/
+.about_text2 {
+	width:90%;
+	margin: 30px auto 75px auto ;
+	font-size: 18px;
+	line-height: 1.7em;
+}
+
+/* 背景*/
+.about_back {
+	background-color: #fff;
+	width:100%;
+	margin: 0 auto 0 auto ;
+	padding: 50px 0 50px 0;
+	font-size: 16px;
+	line-height: 1.7em;
+}
+
+.about_table {
+	width:100%;
+	margin: 0 auto 0 auto ;
+	font-size: 16px;
+	line-height: 1.7em;
+}
+
+.about_table tr{
+	height: 75px;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+    border-bottom-color: #666;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.about_table th{
+	width:40%;
+	padding: 0 10px 0 0;
+}
+
+.about_table td{
+	width:60%;
+}
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        14.プライバシーポリシー
+ 
+ 
+ 
+=========================================================================== */  
+/* 外枠1	*/
+.privacy_1 {
+	width:100%;
+	padding:25px 0 0 0;
+	}
+
+.privacy_2 {
+	width:100%;
+	padding:0 0 0 0;
+	}
+	
+	/* 見出し1	*/
+.privacy_midashi {
+	margin:25px auto 50px auto;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 1.7em;
+	width: 80%;
+}
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        16.ご予約・お問合せ
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+/* 外枠1	*/
+.order_1 {
+	width:100%;
+	padding:45px 0 0 0;
+	margin: 0 auto 0 auto;
+	}
+
+/* 外枠1	*/
+.order_2 {
+	background-color: #fff;
+	width:100%;
+	padding:75px 0 100px 0;
+	margin: 0 auto 0 auto;
+	}
+	
+	/*  */
+	.order_contact {
+	padding:25px;
+	min-height:250px;
+	margin: 50px auto 75px auto ;
+	width:80%;
+	background:url(../img/menulink_back.png);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+	.order_contact_2 {
+	padding:25px;
+	min-height:210px;
+	margin: 50px auto 50px auto ;
+	color: #f7e160;
+	width:80%;
+	background-image: url(../img/navbar_back.png);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+
+.order_contact_text1 {
+	font-size: 12px;
+	line-height: 1em;
+}
+
+.order_contact_text2 {
+	font-weight: bold;
+	font-size: 34px;
+	line-height: 1.2em;
+		color: #fff;
+}
+
+.order_contact_text3 {
+		color: #f7e160;
+	font-size: 16px;
+	line-height: 1em;
+		font-weight: bold;
+}
+
+.order_contact_text2_2 {
+	font-weight: bold;
+	font-size: 34px;
+	line-height: -2em;
+}
+
+.order_contact_text3_2 {
+	font-size: 16px;
+	line-height: -2em;
+	font-weight: bold;
+}
+
+
+ /*-- ==========================================================================
+ 
+ 
+ 
+ 　        15.アクセスマップ
+ 
+ 
+ 
+=========================================================================== */  
+ /*-- ======================
+ 　1.
+========================== */  
+/* 外枠	*/
+.map_out {
+	background-color: #fff;
+	width:100%;
+	padding:45px 0 100px 0;
+	margin: 50px auto 0 auto;
+	}
+
+/* 内枠	*/
+.map_inner {
+	width:80%;
+	padding:0 0 0 0;
+	margin: 0 auto 0 auto;
+	min-height: 10px;
+	}
+	
+/* リスト（左・中）	*/
+.map_inner_l {
+	width:100%;
+	margin:0 0 25px 0;
+	padding: 0 0 25px 0;
+	float: left;
+		border-bottom-style: dotted;
+	border-bottom-width: 1px;
+    border-bottom-color: #666;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+	}
+	
+	/* リスト（右）	*/
+.map_inner_r {
+	width:100%;
+	margin:0 0 25px 0;
+	padding: 0 0 25px 0;
+	float: left;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+    border-bottom-color: #666;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+	}
+	
+.map_title {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.5em;
+	margin: 0 0 20px 0;
+}
+
+.map_datail {
+	font-size: 20px;
+	line-height: 2.2em;
+} /*-- ==========================================================================
+ 
+ 　        ここまで
+ 
+=========================================================================== */  
+/* ここまで	*/
+} 

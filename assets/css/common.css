@@ -1,0 +1,1140 @@
+@charset "UTF-8";
+/*  memo ====================================================================
+
+	黄色  :  #f7e160
+	茶色： #603f26
+　濃い赤：#ae1f24
+   ========================================================================== */
+/* ==========================================================================
+
+	リセット
+
+   ========================================================================== */
+
+/*
+ * HTML要素デフォルトスタイルを定義
+ * normalize.css http://necolas.github.io/normalize.css/
+ */
+
+article,aside,details,figcaption,
+figure,footer,header,hgroup,main,
+nav,section,summary {
+	display: block;
+	vertical-align: middle;
+}
+
+audio,canvas,video {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],template {
+	display: none;
+}
+
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+html * {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, 'メイリオ', sans-serif;
+	font-size: 14px;
+	line-height: 1.7em;
+	margin: 0;
+	color: #454545;
+	background: #f7f8f8;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #fff;
+	background: transparent;
+}
+
+a:focus {
+	color: #f7e160;
+	outline: 0 none;
+}
+
+a:active,
+a:hover {
+	color: #f7e160;
+	outline: 0;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	display: block;
+}
+
+/*
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin: 0.67em 0;
+}
+*/
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+hr {
+	display: block;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+	height: 1px;
+	margin: 0.5em 0;
+	padding: 0;
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+mark {
+	color: #000;
+	background: #ff0;
+}
+
+code,kbd,pre,samp {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+q {
+	quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+/* フッターのバナーの挙動がおかしくなるから外した
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+	border: 0;
+	outline: 0;
+}*/
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* 【1.0 - リセット】 - 1.1 - テキスト位置 
+--------------------------------------------------------- */ 
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+/* 【1.0 - リセット】 - 1.2 - フロート 
+--------------------------------------------------------- */ 
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+
+/* 【1.0 - リセット】 - 1.3 - クリアフィックス
+--------------------------------------------------------- */ 
+.clearfix:before,
+.container:before,
+.header:before,
+.clearfix:after,
+.container:after,
+.header:after {
+	display: table;
+	content: ' ';
+}
+
+.clearfix:after,
+.container:after,
+.header:after {
+	clear: both;
+}
+
+a img {
+	-webkit-transition: opacity ease-in 0.2s;
+	transition: opacity ease-in 0.2s;
+}
+
+/* ロールオーバーに干渉するから個別に対処
+a img:hover {
+	opacity: 0.7;
+}
+ */
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table textarea,
+table input[type='text'] {
+	width: 100%;
+}
+table th {
+	padding-left: 1em;
+	text-align: left;
+}
+.text-danger{
+	color: #ae0000;
+}
+
+/* ==========================================================================
+
+	アイコンフォント
+
+   ========================================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?evt90d');
+  src:  url('../fonts/icomoon.eot?evt90d#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?evt90d') format('truetype'),
+    url('../fonts/icomoon.woff?evt90d') format('woff'),
+    url('../fonts/icomoon.svg?evt90d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-new:before {
+  content: "\e90d";
+}
+.icon-safe3:before {
+  content: "\e900";
+}
+.icon-first3:before {
+  content: "\e901";
+}
+.icon-frow3:before {
+  content: "\e902";
+}
+.icon-hospital3:before {
+  content: "\e903";
+}
+.icon-job3:before {
+  content: "\e904";
+}
+.icon-love3:before {
+  content: "\e905";
+}
+.icon-photo3:before {
+  content: "\e906";
+}
+.icon-price3:before {
+  content: "\e907";
+}
+.icon-question3:before {
+  content: "\e908";
+}
+.icon-service3:before {
+  content: "\e909";
+}
+.icon-sitter3:before {
+  content: "\e90a";
+}
+.icon-top3:before {
+  content: "\e90b";
+}
+.icon-voice3:before {
+  content: "\e90c";
+}
+
+
+/* ==========================================================================
+
+	ウェブフォント
+
+   ========================================================================== */
+	/* CSS Document */
+	@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+	.webfont {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	color: #000;
+	line-height: 1.5em;
+	}
+
+	.webfont_service {
+	font-family: 'Montserrat', sans-serif;
+	}
+/* ==========================================================================  
++　リンクテキストのカラー指定（デフォルトを変える場合）
+
++　<未訪問><訪問済み>
++　全体（a:link）、パンくずリスト、PDFリンク・・・#CC0000
+
++　<マウスオーバー><クリック中>
++　全体（a:link）、パンくずリスト、PDFリンク・・・#CC6600　+　下線無し
+   ========================================================================== */
+ /* リンク色 */
+a:link { color: #0000ff; }
+ /* パンくずリスト */
+.topicPath a:link { color: #0000ff; text-decoration: underline;}
+ /* フッターローカルメニュー */
+.footer_menu a:link { color: #f7e160; }
+ /* ラジオ再生 */
+ .radio a:link { color: #0000ff; }
+/* 通常リンク */
+ .page_link a:link { color: #0000ff; text-decoration: underline;}
+ /* ナビゲーションバー文字色 */
+#mainNav a:link { color: #fff; }
+ /* サイトマップ */
+.map_inner a:link { color: #0000ff; text-decoration: underline;}
+ /* トップページ電話リンク */
+.tel_link a:link { color: #fff; text-decoration: underline;}
+
+ /* 訪問済み */
+a:visited { color: #800080; }
+ /* パンくずリスト */
+.topicPath a:visited { color: #800080; text-decoration: underline;}
+ /* フッターローカルメニュー */
+.footer_menu a:visited { color: #f7e160; }
+ /* 『予約・問合せ』のi-phoneの電話番号リンク色 */
+.order_contact a:visited  { color: #f7e160; }
+.for_i-phone a:visited { color: #f7e160; }
+ /* ラジオ再生 */
+ .radio a:visited { color: #800080; }
+ /* 通常リンク */
+ .page_link a:visited { color: #800080; text-decoration: underline;}
+  /* ナビゲーションバー文字色  */
+#mainNav a:visited { color:#fff; }
+ /* サイトマップ */
+.map_inner a:visited { color: #800080; text-decoration: underline;}
+ /* トップページ電話リンク */
+.tel_link a:visited { color: #fff; text-decoration: underline;}
+
+
+ /* マウスオーバー */
+a:hover { color: #ff8000; text-decoration: none; }
+ /* パンくずリスト */
+.topicPath a:hover { color: #ff8000; text-decoration: underline; }
+ /* フッターローカルメニュー */
+.footer_menu a:hover { color: #fff; }
+ /* ラジオ再生 */
+ .radio a:hover  { color: #0000ff; }
+ /* 通常リンク */
+ .page_link a:hover { color: #ff8000; text-decoration: underline;}
+  /* ナビゲーションバー文字色  */
+#mainNav a:hover { color: #fff; }
+ /* サイトマップ */
+.map_inner a:hover { color: #ff8000; text-decoration: underline;}
+
+ /* 押したとき */
+a:active { color: #ff8000; text-decoration: none; }
+ /* パンくずリスト */
+.topicPath a:active { color: #ff8000; text-decoration: underline; }
+ /* フッターローカルメニュー */
+.footer_menu a:active { color: #fff; }
+ /* ラジオ再生 */
+ .radio a:active  { color: #ff8000; }
+ /* 通常リンク */
+ .page_link a:active { color: #ff8000; text-decoration: underline;}
+ /* ナビゲーションバー 文字色 */
+#mainNav a:active { color: #fff; }
+ /* サイトマップ */
+.map_inner a:active { color: #ff8000; text-decoration: underline;}
+
+
+/* ==========================================================================  
+
+    【hタグ】
+
+   ==========================================================================
+h1,h2,h3,h4,h5,h6 {
+	display:inline
+}
+ */
+
+/* ==========================================================================  
+
+    【パンくずリスト】
+
+   ========================================================================== */
+	.topicPath {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 15px;
+    margin: 30px 0 0 30px;
+    float: left;
+    width: 300px;
+    font-weight: bold;
+	}
+	 /* 現在のページ */
+	.topicPath li { display: inline;
+	}
+ 	/* 上層ページ */
+	.topicPath a {
+    padding-right: 15px;
+    background-image: url(../img/icon_tp.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+	}
+
+	 /* パンくずリスト  */
+	h1 {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    display: inline;
+    margin: 0 0 0 0;
+    font-weight: bold;
+	}
+
+/* ==========================================================================
+
+【共通】ナビゲーションバー上部（モバイル用）
+	
+===========================================================================*/  
+	/* ナビゲージョン展開示の設定（モバイル用） */
+	ul.nav_mobile {
+    display: table;
+    width:100%;
+	}
+	ul.nav_mobile> li:nth-child(2n+1) {
+    clear: both;
+	}
+	ul.nav_mobile > li {
+    display: table-cell;
+    float: left;
+    width: 46%;
+	height:40px; 
+	border: none; 
+	margin:0	2%	2%	2%;
+	padding:8px 0 0 20px;
+	background-image: url(../img/navbar_back.png);
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	}
+
+	/* 下層ページ用（トップページ追加） */
+	ul.nav_linktop_mobile {
+    display: table;
+    width:99%;
+	margin-left:1%;
+	}
+	ul.nav_linktop_mobile> li:nth-child(2n+1) {
+    clear: both;
+	}
+	ul.nav_linktop_mobile > li {
+    display: table-cell;
+    width: 99%;
+	height:50px; 
+	border: none; 
+	margin-top:5%;
+	padding:15px 0 0 0;
+	background-image: url(../img/navbar_back.png);
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	}
+
+	.header_rogo {
+	padding:0 0 0 20px;
+	}
+
+/* ==========================================================================
+
+	【TOPページ】ナビゲーションバー上部（PC用）
+	
+===========================================================================*/  
+/* 　※2016.11.21 適用されない問題発生　タグ内に直接書き込めば適用されることから、なにかと衝突していると推察される。
+ナビゲージョン上部（PC用） 
+.header_up_pc {
+	background-image: url(../img/navbar_back.png);
+	height:165px; 
+	text-align: center;
+}
+*/
+
+/* 「.header_up_pc」をタグに直接書き込むとこちらが適用されなくなる。
+.header_up_pc_l , .header_up_pc_r {
+	margin-top:48px;
+	text-align: center;
+}
+*/
+
+/* ==========================================================================
+
+	【TOPページ】カルーセルスライド
+	
+===========================================================================*/  
+.slide_center {
+	text-align: center;
+}
+
+.slide_center img {
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+
+	【下層用ページ】ナビゲーションバー上部（PC用）
+	
+===========================================================================*/  
+/* 背景 */
+.header_2nd {
+	background-image:  url(../img/navbar_back.png);
+	width:100%;
+	overflow: hidden;  /* スクロールバーを出さないため */
+}
+/* なぜかこれをしないと背景が表示されない */
+.header_2nd {
+	background-image:  url(../img/navbar_back.png);
+}
+
+/* フロートクリア用	*/
+.clear {
+	clear:both;　/*floatの解除、ここがポイント*/
+}
+
+ /* ==========================================================================
+
+	CSSスプライト
+	
+===========================================================================*/  
+/* リスト全体 */
+.nav {
+	position: relative;  /* センター揃えにするため */
+}
+
+ /* スプライト設定 */
+  .nav ul {
+  	margin:0; 
+  	padding:0;
+  	list-style: none;
+  	left:50%;  /* センター揃えにするため */
+	position:relative;  /* センター揃えにするため */
+	float: left;    /* センター揃えにするため */
+  }
+  
+    .nav ul li {
+  	float: left;  /* メニューを横並びにする */
+	left:-50%;  /* センター揃えにするため */
+	position:relative;  /* センター揃えにするため */
+  }
+ 
+ .item a {  /* メニューテキストを画像に置き換える */
+ 	display: block;  /* 画像の共通の高さを設定する */
+ 	height:100px;  /* メニューの高さを設定する */
+ 	background-image: url(../img/nav_sprite2.png);  /* スプライト用画像を設定する */
+ 	white-space: nowrap;  /* 改行を無効にする */
+ 	text-indent:100%;  /* テキストを要素の外に出す */
+ 	overflow: hidden;  /* ボックスからはみ出した部分を消す */
+ 	 }
+ 	 
+	.item.current a {  /* 表示中の画像の高さが違う場合はここで設定する */
+	height:98px;
+ 	}
+ 	
+ 		/* 初めてのお客様（通常）*/
+	.first  a {
+ 	width:117px;
+ 	display: block;
+ 	background-position: 0 0;
+ 	}
+ 	/* 初めてのお客様（マウスオーバー時）*/
+	.first  a:hover {
+ 	background-position: -0 -100;
+ 	}
+ 	
+ 		/* ご利用の流れ（通常）*/
+	.flow a {
+ 	width:116px;
+ 	display: block;
+ 	background-position: -118 0;
+ 	}
+ 	/* ご利用の流れ（マウスオーバー時）*/
+	.flow a:hover {
+ 	background-position: -118 -100;
+ 	}
+ 	
+ 		/* シッター紹介（通常）*/
+	.job a {
+ 	width:116px;
+ 	display: block;
+ 	background-position: -232 0;
+ 	}
+ 	/* シッター紹介（マウスオーバー時）*/
+	.job a:hover {
+ 	background-position: -232 -100;
+ 	}
+ 	
+ 		/* 料金プラン（通常）*/
+	.price a {
+ 	width:116px;
+ 	display: block;
+ 	background-position: -348 0;
+ 	}
+ 	/* 料金プラン（マウスオーバー時）*/
+	.price a:hover {
+ 	background-position: -348 -100;
+ 	}
+
+
+	/* トップページ（通常）*/
+	.top a {
+ 	width:116px;
+ 	display: block;
+ 	background-position: -464 0;
+ 	}
+ 	/* トップページ（マウスオーバー時）*/
+	.top a:hover {
+ 	background-position: -464 -100;
+ 	}
+
+
+ 	/* シッター紹介（通常）*/
+	.item.sitter a {
+ 	width:100px;  /* ボタン幅 */
+ 	display: block;  /* メニューを横並びにする */
+ 	background-position: -564 0;  /* 座標を設定する（左上が0　0で右と下にズレる場合はマイナスになる。） */
+ 	}
+ 	/* シッター紹介（マウスオーバー時）*/
+	.item.sitter a:hover {
+ 	background-position: -564 -100;/* 座標を設定する */
+ 	}
+
+ 	
+ 	/* 動物愛護への取り組み（通常）*/
+	.love a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -664 0;
+ 	}
+ 	/* 動物愛護への取り組み（マウスオーバー時）*/
+	.love a:hover {
+ 	background-position: -664 -100;
+ 	}
+ 	
+ 	 	/* 安全安心対策のご紹介（通常）*/
+	.safe a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -764 0;
+ 	}
+ 	/* 安全安心対策のご紹介（マウスオーバー時）*/
+	.safe a:hover {
+ 	background-position: -764 -100;
+ 	}
+ 	
+ 	 	/*サービス特典のご案内（通常）*/
+	.hospital a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -1064 0;
+ 	}
+ 	/* サービス特典のご案内（マウスオーバー時）*/
+	.hospital a:hover {
+ 	background-position: -1064 -100;
+ 	}
+ 	
+ 	 	/* よくあるご質問（通常）*/
+	.service a {
+ 	width:100px;
+ 	display: block;
+	background-position: -864 0;
+ 	}
+ 	/* よくあるご質問（マウスオーバー時）*/
+	.service a:hover {
+ 	background-position: -864 -100;
+ 	}
+ 	
+ 	 	/* 動物病院のご紹介（通常）*/
+	.question a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -964 0;
+ 	}
+ 	/* 動物病院のご紹介（マウスオーバー時）*/
+	.question a:hover {
+ 	background-position: -964 -100;
+ 	}
+ 	
+ 	 	/* お客様写真館（通常）*/
+	.photo a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -1164 0;
+ 	}
+ 	/* お客様写真館（マウスオーバー時）*/
+	.photo a:hover {
+ 	background-position: -1164 -100;
+ 	}
+ 	
+ 	 	/* お客様からの声（通常）*/
+	.voice a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -1264 0;
+ 	}
+ 	/* お客様からの声（マウスオーバー時）*/
+	.voice a:hover {
+ 	background-position: -1264 -100;
+ 	}
+ 	
+ 
+ /* ==========================================  
+　　該当ページ表示時
+   ==========================================*/ 
+ 	/* シッター紹介（通常）*/
+	.item.sitter_on a {
+ 	width:100px;
+ 	display: block; 
+ 	background-position: -564 -203; 
+ 	}
+ 	/* トップページ（通常）*/
+	.top_on a {
+ 	width:116px;
+ 	display: block;
+ 	background-position: -464 -203;
+ 	}
+ 	/* 動物愛護への取り組み（通常）*/
+	.love_on a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -664 -203;
+ 	}
+ 	 	/* 安全安心対策のご紹介（通常）*/
+	.safe_on a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -764 -203;
+ 	}
+ 	 	/*サービス特典のご案内（通常）*/
+	.hospital_on a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -1064 -203;
+ 	}
+ 	 	/* よくあるご質問（通常）*/
+	.service_on a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -864 -203;
+ 	}
+ 	 	/* 動物病院のご紹介（通常）*/
+	.question_on a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -964 -203;
+ 	}
+ 	 	/* お客様写真館（通常）*/
+	.photo_on a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -1164 -203;
+ 	}
+ 	 	/* お客様からの声（通常）*/
+	.voice_on a {
+ 	width:100px;
+ 	display: block;
+ 	background-position: -1264 -203;
+ 	}
+	/* 初めてのお客様（通常）*/
+	.first_on  a {
+ 	width:117px;
+ 	display: block;
+ 	background-position: 0 -203;
+ 	}
+ 		/* ご利用の流れ（通常）*/
+	.flow_on a {
+ 	width:116px;
+ 	display: block;
+ 	background-position: -118 -203;
+ 	}
+ 		/* シッター紹介（通常）*/
+	.job_on a {
+ 	width:116px;
+ 	display: block;
+ 	background-position: -232 -203;
+ 	}
+ 		/* 料金プラン（通常）*/
+	.price_on a {
+ 	width:116px;
+ 	display: block;
+ 	background-position: -348 -203;
+ 	}
+ 
+	/* レイアウト調整用*/
+	.first {
+	margin:50px 0 0 0;
+ 	}
+	.flow {
+	margin:50px 90px 0 60px;
+ 	}
+	.job {
+	margin:50px 60px 0 90px;
+ 	}
+ 	.price {
+ 	margin:50px 0 0 0;
+ 	}
+  	.rogo img{
+	 margin:8px 0 0 0;
+	 width: 90px;
+ 	}
+  	.rogo_top img{
+	 margin:30px 0 0 0;
+ 	}
+ 	
+/* ==========================================================================  
+
+【TOPページ】ナビゲーションバー下部（モバイル用）
+
+   ========================================================================== */ 
+/* カルーセル下部分（モバイルのみ） */
+.header_mobile_bottom {
+	background-image:  url(../img/navbar_back.png);
+	height:510px;
+	padding:15px 0 50px 0;
+	width:100%;
+}
+
+/* 緊急地震システム */
+.header_mobile_topic_l img {
+	float:right;
+	height:135px;
+	margin: 0 0 15px ;
+}
+/* 遠隔カメラ */
+.header_mobile_topic_r img {
+	float:left;
+	height:135px;
+	margin: 0 0 15px 0;
+}
+
+
+
+/* 【予約バナー】ボックス */
+.rezarb_box {
+	min-height:10px; 
+	width:100%;
+	margin:0 auto 0 auto;
+	padding:0 0 0 0;
+}
+/* 【予約バナー】画像のボックス */
+.rezarb_box ul {
+	margin: 0 auto 20px auto ;
+	width:80%;
+}
+/* 【予約バナー】画像のボックス */
+.rezarb_box li {
+	width:100%;
+	float: left;
+}
+/* 【予約バナー】画像 */
+.rezarb_list img {
+	display: block;
+	max-width:410px;
+	margin: 0 auto 10px auto ;
+}
+
+
+/* ブログ*/
+.header_mobile_tel img {
+	height:50px;
+	margin:20px 0 0 0;
+}
+
+.tel_link {
+	color: #fff;
+}
+
+/* ボックス */
+.header_mobile_info {
+	text-align: center;
+	font-weight: bold;
+	padding:0 20px 0 20px;
+}
+
+/* 詳細タイトル*/
+.header_mobile_title {
+	background-color: #000;
+	color:#f7e160;
+	max-width:180px;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	font-size: 10px;
+	font-weight: bold;
+	margin:5px 0 2px 0;
+}
+/* 詳細 */
+.header_mobile_info_detail {
+	font-size: 12px;
+	max-width:180px;
+	color:#fff;
+}
+
+.header_mobile_detail {
+	max-width:180px;
+	font-size: 14px;
+	font-weight: bold;
+	margin:5px 0 2px 0;
+	color:#fff;
+}
+
+/* ==========================================================================
+
+    ページトップへ戻るボタンとスムーズスクロール（PC用）
+
+   ========================================================================== */
+.pagetop3 {
+    position: fixed;
+    bottom: -300px;
+    right: 24px;
+    margin: 0 auto;
+    z-index: 200;
+    visibility: hidden;
+    -webkit-transition: bottom 0.4s linear;
+    transition: bottom 0.4s linear;
+}
+.pagetop3.visible {
+    bottom: 30px;
+}
+.pagetop3 a {
+    display: table-cell;
+    width: 6em;
+    height: 6em;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 50%;
+    background: #000;
+      text-decoration: none;
+}
+
+/* ==========================================================================  
+
+	【コンタクト】
+
+   ========================================================================== */ 
+/* 外枠 */
+#contact {
+	width:1152px;
+	margin:0 0 40px 0;
+	text-align: center;
+}
+/* 「お気軽にお問合せ下さい」 */
+.contact_text {
+	width:100%;
+	margin:15px 0 0 0;
+	color: #000;
+	font-size: 22px;
+	font-weight: bold;
+}
+/* 電話番号部分外枠 */
+.contact_tel {
+	width:300px;
+	height:84px;
+	background-color: #F7F8F8;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: thin solid #C6CED3;
+	margin:0 0 0 426px;
+}
+/* 「お問い合わせはコチラ」 */
+.contact_tel_text {
+	width:256px;
+	height:26px;
+	margin : 8px 0 0 22px;
+	padding:2px 0 0 0;
+	background-color: #8b989e;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+/* 「☎︎0538-38-9915」 */
+.contact_tel span {
+	font-size: 34px;
+	font-weight: bold;
+	color: #000;
+}
+/* =========================  
+	【postmail 送信フォーム】
+   ========================= */ 
+/* 「conf.html」 「thanks.html」タイトル文*/
+.contact_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px; /*・・・マージンを調整*/
+    margin-top: 20px; /*・・・マージンを調整*/
+}
+/* 「error.html」タイトル文*/
+.errar_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;  /*・・・マージンを調整*/
+    margin-top: 20px; /*・・・マージンを調整*/
+    color: #d9534f;  /*・・・文字を赤くする*/
+}
+/* フォーム部分外枠*/
+.mail { /*・・・左右の空きの調整*/
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* 「conf.html」（確認画面でメッセージの量で崩れるので、その対策） */
+.conf table th {
+    min-width:150px;
+}
+/* 「conf.html」 「thanks.html」「error.html」外枠*/
+#header_contact {
+	height:130px;
+	width:100%;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+    	border-bottom-color: #e28534;
+    	background-image: url(../img/common/texture.gif) ;
+    	background-repeat: repeat;
+	padding: 25px 20px 0px 30px;
+	margin:0 0 50px 0;
+}
+/* 「thanks.html」用*/
+.thanks_space {
+	height:1px;
+	margin:50px 0 0 0;
+	display:block
+}
+
+
+/* ==========================================================================
+
+    ページトップへ戻る（モバイル用） 　※作動しないからどかした
+
+   ========================================================================== 
+.pagetop {
+    text-align: right;
+    margin: 0;
+    width: 100%;
+}
+.pagetop a {
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.0em;
+    padding: 1em 1em 0.5em;
+    width: 25%;
+    border-radius: 4px 4px 0 0;
+    background: #000;
+    text-decoration: none;
+}
+*/
+
+	
