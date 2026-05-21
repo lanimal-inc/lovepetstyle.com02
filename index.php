@@ -5,7 +5,7 @@
 
     <div class="container-fluid">
 
-        <!-- カルーセルスライド -->
+        <!-- カルーセルスライド！ -->
         <div class="row">
             <div id="c1" class="carousel slide taisaku_mobile" data-ride="carousel" data-interval="6000">
                 <ol class="carousel-indicators">
