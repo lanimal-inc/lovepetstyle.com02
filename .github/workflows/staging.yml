@@ -10,22 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.9.0
+        uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Add known_hosts
+      - name: Add Xserver host key
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+          ssh-keyscan -p 10022 "${SSH_HOST}" >> ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
 
-      - name: Deploy via rsync
+      - name: Deploy via SCP
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
         run: |
-          rsync -avz --delete \
-          -e "ssh -p ${{ secrets.SSH_PORT }}" \
-          ./ \
-          ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/takagi3788/lovepetstyle.com/public_html/tesvr.lovepetstyle.com/wp-content/themes/base
+          scp -P 10022 -o StrictHostKeyChecking=yes -r ./* \
+          "${SSH_USER}@${SSH_HOST}:/home/takagi3788/lovepetstyle.com/public_html/tesvr.lovepetstyle.com/wp-content/themes/base/"
