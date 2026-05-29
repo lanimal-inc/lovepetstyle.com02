@@ -1,6 +1,5 @@
 <body <?php body_class(); ?>>
 
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDXZCD5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="site-header">
         <div id="link_pagetop"></div>
         <div class="header_top">

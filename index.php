@@ -5,7 +5,7 @@
 
     <div class="container-fluid">
 
-        <!-- カルーセルスライド！ -->
+        <!-- カルーセルスライド -->
         <div class="row">
             <div id="c1" class="carousel slide taisaku_mobile" data-ride="carousel" data-interval="6000">
                 <ol class="carousel-indicators">
@@ -332,101 +332,54 @@
                 <h2 class="section-title">ペットシッターのお知らせ＆<br class="sp">お世話記録<br><span class="section-title_small">LOVEPET（ラブペット）会員様</span></h2>
             </div>
         </div>
-
         <div class="top_1_cam">
             <div>
-                <span class="cam_top">
-                    <span class="icon-new" style="color:#ae1f24;"> </span>&nbsp;
-                    NEW 2025年3月23日 GWのご予約を開始致します！<br><br>
-                    <span class="cam_now">
-                        ☆GWのご予約を開始します！☆<br><br>
-                        GW年始期間は【4/29（水） ～ 5/10（日）】までとします。<br>
-                        大変混雑が予想されますので、お早目のご予約をお願い致します。<br>
-                        ※ご予約状況により予約を終了する場合がございますので予めご了承ください。<br>
-                        ※日程がお分かり次第お早目のご予約をお願い致します。<br><br>
-                    </span><br>
+                <?php
+                // カスタム投稿「news」を最新順に取得（件数制限をしたい場合は 'posts_per_page' => 5 などを追加）
+                $args = [
+                    'post_type'      => 'news',
+                    'posts_per_page' => -1, // 全件表示（制限する場合は数値を指定）
+                    'post_status'    => 'publish'
+                ];
+                $news_query = new WP_Query($args);
+                
+                if ($news_query->have_posts()) :
+                    $count = 0; // ループの回数を数えるカウンター
+                    
+                    while ($news_query->have_posts()) : $news_query->the_post();
+                        $count++; // ループが回るたびに1ずつ足す
+                ?>
+                    <span class="cam_top">
+                        <?php 
+                        // 1件目の記事（最新記事）だけにNEWをつける
+                        if ($count === 1) : 
+                        ?>
+                            <span class="icon-new" style="color:#ae1f24;">&nbsp;</span>
+                        <?php endif; ?>
+                        
+                        <!-- 投稿日とタイトルを表示 -->
+                        <?php echo get_the_date('Y年m月d日'); ?>&nbsp;<?php the_title(); ?><br><br>
+                        
+                        <!-- 本文がある場合のみ表示 -->
+                        <?php if (get_the_content()) : ?>
+                            <span class="cam_now">
+                                <?php 
+                                // 改行を維持して本文を出力
+                                echo nl2br(get_the_content()); 
+                                ?><br><br>
+                            </span><br>
+                        <?php endif; ?>
+                    </span>
                     <hr>
-
-                    <span class="cam_top">2025年11月10日 年末年始のご予約を開始致します！<br><br>
-                    <span class="cam_now">
-                        ☆年末年始のご予約を開始します！☆<br><br>
-                        年末年始期間は【12月27日（土）～1月4日（日）】までとします。<br>
-                        大変混雑が予想されますので、お早目のご予約をお願い致します。<br>
-                        ※ご予約状況により予約を終了する場合がございますので予めご了承ください。<br>
-                        ※日程がお分かり次第お早目のご予約をお願い致します<br><br>
-                    </span><br>
-                    <hr>
-
-                    <span class="cam_top">2025年9月1日 シルバーウィークのご予約を開始致します！<br><br>
-                    <span class="cam_now">
-                        ☆シルバーウィークのご予約を開始します！☆<br><br>
-                        シルバーウィーク期間は【9月16日（火）～9月24日（水）】までとします。<br>
-                        大変混雑が予想されますので、お早目のご予約をお願い致します。<br>
-                        ※ご予約状況により予約を終了する場合がございますので予めご了承ください。<br>
-                        ※日程がお分かり次第お早目のご予約をお願い致します<br><br>
-                    </span><br>
-                    <hr>
-
-                    <span class="cam_top">2025年7月1日 お盆のご予約を開始致します！<br><br>
-                    <span class="cam_now">
-                        ☆お盆のご予約を開始致します！☆<br><br>
-                        お盆期間は【8月9日（土）～8月17日（日）】までとします。<br>
-                        大変混雑が予想されますので、お早目のご予約をお願い致します。<br>
-                        ※ご予約状況により予約を終了する場合がございますので予めご了承ください。<br>
-                        ※日程がお分かり次第お早目のご予約をお願い致します。<br><br>
-                    </span><br>
-                    <hr>
-
-                    <span class="cam_top">2025年4月1日　GWのご予約を開始致します<br><br>
-                    <span class="cam_now">
-                        ☆GWののご予約を開始します!☆<br><br>
-                        GW期間は【4月26日（土）～5月11日（日）】までとします。<br>
-                        大変混雑が予想されますので、お早目のご予約をお願い致します。<br>
-                        ※ご予約状況により予約を終了する場合がございますので予めご了承ください。<br>
-                        ※日程がお分かり次第お早目のご予約をお願い致します。<br><br>
-                    </span><br>
-                    <hr>
-
-                    <span class="cam_top">2024年11月1日 年末年始のご予約を開始致します！<br><br>
-                    <span class="cam_now">
-                        ☆年末年始のご予約を開始します！☆<br><br>
-                        年末年始期間は【12月28日（土）～1月5日（日）】までとします。<br>
-                        大変混雑が予想されますので、お早目のご予約をお願い致します。<br>
-                        ※ご予約状況により予約を終了する場合がございますので予めご了承ください。<br>
-                        ※日程がお分かり次第お早目のご予約をお願い致します。<br><br>
-                    </span><br>
-                    <hr>
-
-                    <span class="cam_top">2021年9月15日　安全なお散歩を行う為、ダブルリードを採用致しました！<br><br>
-                    <span class="cam_now">
-                        この度、弊社では更なる安全性を確保する為、お散歩時のダブルリードを必須とする事と致しました。<br>
-                        お客様のご用意頂くリードとは別に、シッターが持参する肩掛けのリードも同時に装着し、これまで以上に安心・安全でお散歩ができるよう配慮を致します。
-                    </span><br>
-                    <hr>
-
-                    <span class="cam_top"><span style="color:#ae1f24;"></span>&nbsp;2020年11月19日
-                        トリミングサロン＆動物病院通院代行コースを開始いたしました！<br><br>
-                        <span class="cam_now">
-                            昨今の社会情勢により外出する事を控えられている方、連れていきたいけれどご都合が悪いという方はどうぞお気軽にご利用くださいませ。<br>
-                            ※ご利用にあたり、注意事項に同意して頂く必要がございます。詳細は<a href="<?php echo home_url('/job/#trimming'); ?>">コチラ</a>をご覧ください<br>
-                        </span><br>
-                        <hr>
-
-                    <span class="cam_title"><span style="color:#ae1f24;"></span>&nbsp;2020年1月1日 第1弾フランチャイズ募集開始！</span><br><br>
-                    <span class="cam_now">
-                        2020年1月1日より待望の第1弾フランチャイズの募集を開始しました！エリアは【東京23区・神奈川県西区・中区】資料請求、詳細等はこちらをご覧ください。<br><br>
-                        <span class="page_link">
-                            <a href="<?php echo home_url('/franchise/'); ?>">&nbsp;<?php echo home_url('/franchise/'); ?>&nbsp;</a>
-                        </span>
-                        <br>
-                    </span><br>
-                    <hr>
-
-                    <span class="cam_title">2012年3月1日</span><br>
-                    <span class="cam_old">動物病院紹介サービスがご利用出来ます。動物病院をお探しの方はぜひご相談ください。詳細は<a href="<?php echo home_url('/hospital/'); ?>">コチラ</a>。</span><br>
-                    <hr>
+                <?php 
+                    endwhile;
+                    wp_reset_postdata(); // クエリのリセット
+                else :
+                ?>
+                    <p>現在、新しいお知らせはありません。</p>
+                <?php endif; ?>
             </div>
-            </div>
+        </div>
 
         <center>
             <div class="top_f_cam pc_only">

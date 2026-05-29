@@ -343,7 +343,7 @@ $slug = get_post( $post )->post_name;
 =========================================================================== -->
 	<!-- ページリンク用 -->
 	<div id="link_menu_7"></div>
-	<div class="menu_box_03">
+	<div class="menu_box_04">
 		<!--タイトル-->
 		<div class="section-header">
 			<h2 class="section-title">ペット介護サービス</h2>
