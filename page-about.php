@@ -25,10 +25,8 @@ $slug = get_post( $post )->post_name;
 	<!-- ==========================================================================
 	1.代表挨拶
 =========================================================================== -->
-	<!-- ページリンク用 -->
-	<div id="link_about_1"></div>
+	<!-- <div id="link_about_1"></div>
 	<div class="about_1">
-		<!--タイトル-->
 		<div class="section-header">
 			<h2 class="section-title">代表挨拶</h2>
 		</div>
@@ -41,12 +39,9 @@ $slug = get_post( $post )->post_name;
 			全ては愛する大切な家族のために。いつの日も笑顔になって頂ける事をお約束いたします。
 			<p>&nbsp;</p>
 			<span style=" font-weight:bold; float: right;">代表　金子貴則</span>
-			<!--フロートクリア用-->
 			<div class="clear"></div>
-			<!--about_text  -->
 		</div>
-		<!-- about_1 -->
-	</div>
+	</div> -->
 	<!-- ==========================================================================
 	1.会社概要
 =========================================================================== -->
@@ -80,26 +75,26 @@ $slug = get_post( $post )->post_name;
 					<td><span class="page_link"><a
 								href="http://www.lovepetstyle.com">http://www.lovepetstyle.com</a></span></td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<th>代表</th>
 					<td>金子貴則</td>
-				</tr>
+				</tr> -->
 				<tr>
 					<th>主要取引銀行</th>
 					<td>みずほ銀行</td>
 				</tr>
-				<tr>
+				<!-- <tr>
 
 					<th>顧問税理士</th>
 					<td>ステップ総合事務所</td>
-				</tr>
-				<tr>
+				</tr> -->
+				<!-- <tr>
 					<th>顧問社会保険労務士</th>
 					<td>春山国際労務管理事務所</td>
-				</tr>
+				</tr> -->
 				<tr>
 					<th>事業所の名称</th>
-					<td>LOVE PET</td>
+					<td>株式会社ラニマル</td>
 				</tr>
 				<tr>
 					<th>事業所の所在地</th>
